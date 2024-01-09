@@ -41,7 +41,7 @@ resource "aws_subnet" "public" {
 
 }
 
-# Create Private subnets
+### Create Private subnets
 resource "aws_subnet" "private" {
   count                   = length(var.azs)
   vpc_id                  = aws_vpc.main.id

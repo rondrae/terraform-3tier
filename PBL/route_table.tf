@@ -29,7 +29,7 @@ resource "aws_route_table" "public-rtb" {
   )
 }
 
-# create route for the public route table and attach the internet gateway
+# create default route in the public route table and attach the internet gateway
 resource "aws_route" "public-rtb-route" {
   route_table_id         = aws_route_table.public-rtb.id
   destination_cidr_block = "0.0.0.0/0"
