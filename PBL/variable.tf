@@ -2,9 +2,6 @@ variable "region" {
   default = "ca-central-1"
 }
 
-
-
-
 variable "vpc_cidr" {
   default = "172.16.0.0/16"
 }
@@ -23,4 +20,13 @@ variable "preferred-public-subnet-count" {
 
 variable "private-subnet-count" {
   default = 4
+}
+
+variable "tags" {
+  type    = map(string)
+  default = {}
+}
+
+variable "azs" {
+
 }
