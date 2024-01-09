@@ -6,6 +6,14 @@ variable "vpc_cidr" {
   default = "172.16.0.0/16"
 }
 
+variable "pub_cidr" {
+  default = "172.16.0.0/22"
+}
+
+variable "priv_cidr" {
+  default = "172.16.6.0/22"
+}
+
 variable "enable_dns_support" {
   default = "true"
 }
