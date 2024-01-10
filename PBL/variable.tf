@@ -39,3 +39,10 @@ variable "azs" {
 
 }
 
+variable "ami" {
+ default = "ami-0a19d6b92fc84773e" 
+}
+
+variable "keypair" {
+  
+}
