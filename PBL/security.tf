@@ -103,7 +103,7 @@ resource "aws_security_group_rule" "inbound-bastion-ssh" {
   security_group_id        = aws_security_group.nginx-sg.id
 }
 
-# security group for ialb, to have acces only from nginx reverser proxy server
+# Security group for ialb, to have acces only from nginx reverser proxy server
 resource "aws_security_group" "int-alb-sg" {
   name   = "my-alb-sg"
   vpc_id = aws_vpc.main.id
@@ -133,7 +133,7 @@ resource "aws_security_group_rule" "inbound-ialb-https" {
   security_group_id        = aws_security_group.int-alb-sg.id
 }
 
-# security group for webservers, to have access only from the internal load balancer and bastion instance
+# Security group for the webservers, to have access only from the internal load balancer and bastion instance
 resource "aws_security_group" "webserver-sg" {
   name   = "my-asg-sg"
   vpc_id = aws_vpc.main.id
