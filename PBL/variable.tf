@@ -46,3 +46,18 @@ variable "ami" {
 variable "keypair" {
   
 }
+
+variable "account_no" {
+  type = number
+}
+variable "master-username" {
+  
+}
+
+variable "master-password" {
+  
+}
+
+variable "Environment" {
+  
+}
