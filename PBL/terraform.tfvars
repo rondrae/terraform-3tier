@@ -18,6 +18,3 @@ ami = "ami-0a19d6b92fc84773e"
 
 keypair = "project15"
 
-account_no = 731535014045
-master-password = "Iceman12"
-master-username = "drae"
